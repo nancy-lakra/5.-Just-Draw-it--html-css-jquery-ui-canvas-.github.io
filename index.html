@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mynerve">   
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Just Draw it!</title>
+    </head>
+    <body>
+        <!-- TITLE -->
+        <div id="header">Just Draw it!</div>
+        <!-- INPUT CONTAINER -->
+        <div class="inputContainer">
+            <!-- COLOR SELECT -->
+            <div id="colorInput" class="input">
+                <label id="labelColor" for="paintColor">Choose the Color: </label>
+                <input type="color" list id="paintColor">
+            </div>
+            <!-- WIDTH SELECT -->
+            <div class="input">
+                Choose the width of pencil: <div id="slider"></div>
+            </div>
+            <div id="weight"></div>
+        </div>
+        <!-- CANVAS BOX -->
+        <div id="container">
+            <canvas id="paint" width="800px" height="400px"></canvas>
+        </div>
+        <!-- BUTTONS -->
+        <div class="inputContainer2">
+            <!-- ERASE -->
+            <div class="input1">
+                <span id="erase" class="button">Erase</span>
+            </div>
+            <!-- SAVE -->
+            <div class="input1">
+                <span id="save" class="button1">Save</span>
+            </div>
+            <!-- RESET -->
+            <div class="input1">
+                <span id="reset" class="button1">Reset</span>
+            </div>
+        </div>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>
